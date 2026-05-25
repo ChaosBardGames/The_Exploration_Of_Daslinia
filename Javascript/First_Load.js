@@ -14,10 +14,10 @@ function First_Load() {
 
     for(let PagesLength of Pages) {
       
-      var Current_Page = 1;
+      var Current_Page = 0;
       
       if (!(PagesLength === PageToChange)) {
-        const PageToHide = Pages[Current_Page];
+        const PageToHide = Pages.at(Current_Page);
         document.getElementById(PageToHide).style.display = "none";
       } else {
         const PageToShow = Pages[Current_Page];

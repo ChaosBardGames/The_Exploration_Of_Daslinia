@@ -1,6 +1,5 @@
-function First_Load() {
-  var PageToChange = 1;
-  const Pages = [
+
+const Pages = [
     "Title_Card",
     "Intro_I",
     "Intro_II",
@@ -8,7 +7,11 @@ function First_Load() {
     "Intro_IV",
     "Intro_V",
     "Intro_VI",
-  ];
+];
+
+function First_Load() {
+  var PageToChange = 1;
+
     for(let PagesLength of Pages) {
       
       var Current_Page = 1;

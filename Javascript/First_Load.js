@@ -11,7 +11,7 @@ function First_Load() {
   ];
     for(let PagesLength of Pages) {
       
-      let Current_Page = 1;
+      var Current_Page = 1;
       
       if (!(PagesLength === PageToChange)) {
         const PageToHide = Pages[Current_Page];
@@ -21,7 +21,7 @@ function First_Load() {
         PageToShow.style.display = "block";
       }
       
-      Current_Page = Current_Page++; 
+      var Current_Page = Current_Page + 1; 
       
     }
 }

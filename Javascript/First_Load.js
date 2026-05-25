@@ -10,24 +10,13 @@ const Pages = [
 ];
 
 function First_Load() {
-  var PageToChange = 1;
 
-    for(let PagesLength of Pages) {
-      
-      var Current_Page = 0;
-      
-      if (!(PagesLength === PageToChange)) {
-          console.log(Pages.at(Current_Page));
-        const PageToHide = Pages.at(Current_Page);
-          console.log(Pages.at(Current_Page))
-        document.getElementById(PageToHide).style.display = "none";
-      } else {
-        const PageToShow = Pages[Current_Page];
-        document.getElementById(PageToShow).style.display = "block";
-      }
-
-      const Temp_Page = Current_Page
-      var Current_Page = Temp_Page + 1; 
-      
+    for(let i = 0; i < Pages.length; i++) {      
+        const Page_Name = Pages[i];
+        if (i !== PageToChange) {
+            document.getElementById(PageName).style.display = "none";
+        } else {
+            document.getElementById(PageName).style.display = "block";
+        }
     }
 }

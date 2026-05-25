@@ -11,7 +11,7 @@ function First_Load() {
   ];
     for(let PagesLength of Pages) {
       
-      let Current_Page = 1;
+      var Current_Page = 1;
       
       if (!(PagesLength === PageToChange)) {
         const PageToHide = Pages[Current_Page];
@@ -20,8 +20,9 @@ function First_Load() {
         const PageToShow = Pages[Current_Page];
         document.getElementById(PageToShow).style.display = "block";
       }
-      
-      Current_Page = Current_Page++; 
+
+      const Temp_Page = Current_Page
+      var Current_Page = Temp_Page + 1; 
       
     }
 }

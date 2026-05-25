@@ -17,7 +17,9 @@ function First_Load() {
       var Current_Page = 0;
       
       if (!(PagesLength === PageToChange)) {
+          console.log(Pages.at(Current_Page));
         const PageToHide = Pages.at(Current_Page);
+          console.log(Pages.at(Current_Page))
         document.getElementById(PageToHide).style.display = "none";
       } else {
         const PageToShow = Pages[Current_Page];

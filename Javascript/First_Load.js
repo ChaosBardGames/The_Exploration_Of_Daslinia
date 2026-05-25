@@ -11,17 +11,17 @@ function First_Load() {
   ];
     for(let PagesLength of Pages) {
       
-      var Current_Page = 1;
+      let Current_Page = 1;
       
       if (!(PagesLength === PageToChange)) {
         const PageToHide = Pages[Current_Page];
-        PageToHide.style.display = "none";
+        document.getElementById(PageToHide).style.display = "none";
       } else {
         const PageToShow = Pages[Current_Page];
-        PageToShow.style.display = "block";
+        document.getElementById(PageToShow).style.display = "block";
       }
       
-      var Current_Page = Current_Page + 1; 
+      Current_Page = Current_Page++; 
       
     }
 }

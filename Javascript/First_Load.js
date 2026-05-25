@@ -12,12 +12,12 @@ const Pages = [
 function First_Load() {
 
     for(let i = 0; i < Pages.length; i++) {  
-        const PageToChange = 0;
+        const Page_To_Change = 0;
         const Page_Name = Pages[i];
-        if (i !== PageToChange) {
-            document.getElementById(PageName).style.display = "none";
+        if (i !== Page_To_Change) {
+            document.getElementById(Page_Name).style.display = "none";
         } else {
-            document.getElementById(PageName).style.display = "block";
+            document.getElementById(Page_Name).style.display = "block";
         }
     }
 }

@@ -1,5 +1,4 @@
 function Page_Numerator() {
-  document.getElementById(this.id);
-  var Page_Id = Button_Id;
+  var Page_Id = document.getElementById(this.id);
   Number(Page_Id);
 }

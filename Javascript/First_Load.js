@@ -1,7 +1,7 @@
 function First_Load() {
   var PageToChange = 1;
   const Pages = [
-    "Title Card",
+    "Title_Card",
     "Intro_I",
     "Intro_II",
     "Intro_III",

@@ -1,4 +1,4 @@
-function First_Load {
+function First_Load() {
   var PageToChange = 1;
   const Pages = [
     "Title Card",

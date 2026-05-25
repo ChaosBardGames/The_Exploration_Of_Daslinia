@@ -20,4 +20,5 @@ function First_Load() {
             document.getElementById(Page_Name).style.display = "block";
         }
     }
+    var Page_To_Change = 1;
 }

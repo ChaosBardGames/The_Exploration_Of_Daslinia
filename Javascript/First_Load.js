@@ -11,7 +11,8 @@ const Pages = [
 
 function First_Load() {
 
-    for(let i = 0; i < Pages.length; i++) {      
+    for(let i = 0; i < Pages.length; i++) {  
+        const PageToChange = 0;
         const Page_Name = Pages[i];
         if (i !== PageToChange) {
             document.getElementById(PageName).style.display = "none";
